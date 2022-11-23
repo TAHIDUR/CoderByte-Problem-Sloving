@@ -41,32 +41,45 @@
                         </div>
                     </div>
           
-                
-                    <textarea class="textarea textarea-info mt-4 h-screen" disabled>function LongestWord(sen) { 
+                    <div class="flex justify-center gap-5 mt-3 h-7/8">
+<textarea class="form-textarea mt-1 block flex-1 rows="23" disabled>function LongestWord(sen) { 
+  // code goes here  
+  let words = sen.match(/\b(\w+)\b/g);
 
-                        // code goes here  
-                        let words = sen.match(/\b(\w+)\b/g);
+  let max_length = 0
+
+  let position;
+
+  words.forEach(
+    (item, index) => {
+      if(max_length < item.length)
+      {
+        max_length = item.length
+        position = index
+      }
+    }
+  );
+  return words[position];
+}
+// keep this function call here 
+console.log(LongestWord(readline()));</textarea>
                       
-                        let max_length = 0
                       
-                        let position;
-                      
-                        words.forEach(
-                          (item, index) => {
-                            if(max_length < item.length)
-                            {
-                              max_length = item.length
-                              position = index
-                            }
-                          }
-                        );
-                      
-                        return words[position];
-                      
-                      }
-                         
-                      // keep this function call here 
-                      console.log(LongestWord(readline()));</textarea>
+                      <textarea class="form-textarea mt-1 block  flex-1" rows="11"  disabled>function LongestWord(sen) { 
+    // code goes here  
+    let words = sen.match(/\b(\w+)\b/g);
+    let sorted_words = words.sort(
+      (a, b) =>{
+        return a.length - b.length
+      })
+    return sorted_words[0];
+  }  
+  // keep this function call here 
+  console.log(LongestWord(readline()));</textarea>
+
+                    </div>
+                
+                    
 
 
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Factorial</title>
+    <script src="1.Codeland Username Validation Solution.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <div class="relative px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl pt-20 pb-32 sm:pt-15 sm:pb-40">
+            <div>
+              <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+                <div class="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                  <span class="text-gray-600">
+                    The Problem link of Coder Byte here. <a href="http://www.coderbyte.com/editor/Codeland%20Username%20Validation:JavaScript" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-2xl font-bold tracking-tight sm:text-center sm:text-6xl">First Factorial</p></h1>
+                <div class="mt-8 grid gap-x-4 sm:grid-center">
+                  
+                    <p class="font-light text-gray-500 dark:text-gray-400 flex justify-center">Have the function FirstFactorial(num) take the num parameter being passed and return the factorial of it. For example: if num = 4, then your program should return (4 * 3 * 2 * 1) = 24. For the test cases, the range will be between 1 and 18 and the input will always be an integer.</p>
+
+                    
+                    <h3 class="text-2xl font-bold tracking-tight sm:text-center sm:text-6xl">Examples</p></h3>
+
+                    <div class="flex justify-center gap-4 mt-5">
+                        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                            <p class="font-normal text-gray-700 dark:text-gray-400">Input: 4</p>
+                            <p class="font-normal text-gray-700 dark:text-gray-400">Output: 24</p>
+                        </div>
+        
+                        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                            <p class="font-normal text-gray-700 dark:text-gray-400">Input: 8</p>
+                            <p class="font-normal text-gray-700 dark:text-gray-400">Output: 40320</p>
+                        </div>
+                    </div>
+        
+                
+
+                    <div class="flex justify-center gap-4">
+
+                        <textarea class="textarea textarea-info mt-4 w-2/5" rows="12" disabled> let sum = 1;
+        function FirstFactorial(num) { 
+        // code goes here  
+        if(num >= 1)
+        {
+            sum *= num;
+            FirstFactorial(num-1)
+        }
+        return sum;
+        }
+        // keep this function call here 
+        console.log(FirstFactorial(readline()));</textarea>
+
+
+                        <textarea class="textarea textarea-info mt-4 w-2/5" rows="8" disabled>function FirstFactorial(num) { 
+        // code goes here  
+            return (num === 1 ? 1 : num * FirstFactorial(num-1))
+        }
+        // keep this function call here 
+        console.log(FirstFactorial(readline()));</textarea>
+
+
+                    </div>
+
+
+
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </main>
+</body>
+</html>
+
