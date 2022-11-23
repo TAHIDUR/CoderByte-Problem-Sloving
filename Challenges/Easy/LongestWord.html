@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeland Username Validation</title>
+    <script src="1.Codeland Username Validation Solution.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <div class="relative px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl pt-20 pb-32 sm:pt-15 sm:pb-40">
+            <div>
+              <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+                <div class="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                  <span class="text-gray-600">
+                    The Problem link of Coder Byte here. <a href="https://www.coderbyte.com/information/Longest%20Word" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">Longest Word</p></h1>
+                <div class="mt-8 grid gap-x-4 sm:grid-center">
+                  
+                    <p class="font-light text-gray-500 dark:text-gray-400 flex justify-center">Have the function LongestWord(sen) take the sen parameter being passed and return the longest word in the string. If there are two or more words that are the same length, return the first word from the string with that length. Ignore punctuation and assume sen will not be empty. Words may also contain numbers, for example "Hello world123 567"
+                    </p>
+                        
+                    <h3 class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">Examples</p></h3>
+
+                    <div class="flex justify-center gap-4 mt-3">
+                        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                            <p class="font-normal text-gray-700 dark:text-gray-400">Input: "fun&!! time"</p>
+                            <p class="font-normal text-gray-700 dark:text-gray-400">Output: time</p>
+                        </div>
+        
+                        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                            <p class="font-normal text-gray-700 dark:text-gray-400">Input: "I love dogs"</p>
+                            <p class="font-normal text-gray-700 dark:text-gray-400">Output: love</p>
+                        </div>
+                    </div>
+          
+                
+                    <textarea class="textarea textarea-info mt-4 h-screen" disabled>function LongestWord(sen) { 
+
+                        // code goes here  
+                        let words = sen.match(/\b(\w+)\b/g);
+                      
+                        let max_length = 0
+                      
+                        let position;
+                      
+                        words.forEach(
+                          (item, index) => {
+                            if(max_length < item.length)
+                            {
+                              max_length = item.length
+                              position = index
+                            }
+                          }
+                        );
+                      
+                        return words[position];
+                      
+                      }
+                         
+                      // keep this function call here 
+                      console.log(LongestWord(readline()));</textarea>
+
+
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </main>
+</body>
+</html>
+
