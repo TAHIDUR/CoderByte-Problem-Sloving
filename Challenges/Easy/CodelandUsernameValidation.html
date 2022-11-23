@@ -6,33 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codeland Username Validation</title>
     <script src="1.Codeland Username Validation Solution.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <main>
+        <div class="relative px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl pt-20 pb-32 sm:pt-15 sm:pb-40">
+            <div>
+              <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+                <div class="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                  <span class="text-gray-600">
+                    The Problem link of Coder Byte here. <a href="http://www.coderbyte.com/editor/Codeland%20Username%20Validation:JavaScript" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">Codeland Username Validation</p></h1>
+                <div class="mt-8 grid gap-x-4 sm:grid-center">
+                  
+                    <p class="font-light text-gray-500 dark:text-gray-400 flex justify-center">Codeland Username Validation
+                        Have the function CodelandUsernameValidation(str) take the str parameter being passed and determine if the string is a valid username according to the following rules:</p>
 
-    link: https://www.coderbyte.com/editor/Codeland%20Username%20Validation:JavaScript
+                        
+                    <ul class="space-y-1 w-fill list-disc list-inside text-gray-500 dark:text-gray-400">
+                        <li>
+                            The username is between 4 and 25 characters.
+                        </li>
+                        <li>
+                            It must start with a letter.
+                        </li>
+                        <li>
+                            It can only contain letters, numbers, and the underscore character.
+                        </li>
+                        <li>
+                            It cannot end with an underscore character.
+                        </li>
+                    </ul>
 
-    problem 
+
+                  
+                    <p class="font-light text-gray-500 dark:text-gray-400 flex justify-center mt-2">
+                        If the username is valid then your program should return the string true, otherwise return the string false.
+                    </p>
+
+                    <pre class="">
+                        Examples
+                        Input: "aa_"
+                        Output: false
+                        Input: "u__hello_world123"
+                        Output: true
+                    </pre>
+          
+                
+                    <textarea class="textarea textarea-info mt-4 h-screen" disabled>function CodelandUsernameValidation(str) { 
+
+                        // code goes here  
+                        let length = str.length;
+                        
+                        let starts_with = str.charCodeAt(0);
+                      
+                        let last_char_ascii = str.charCodeAt(length-1)
+                      
+                        let status = true;
+                      
+                      
+                        if(length<4 || length>25)
+                        {
+                          return status = false;
+                        }
+                      
+                        if(starts_with<65 || starts_with>90 && starts_with<97 || starts_with>122)
+                        {
+                          return status = false;
+                        }
+                      
+                      
+                        for(let i=0; i<length; i++)
+                        {
+                          status = checkValid(str.charCodeAt(i));
+                      
+                          if(status === false)
+                          {
+                            return false;
+                          }
+                        }
+                      
+                      
+                        if(last_char_ascii === 95)
+                        {
+                          return false;
+                        }
+                      
+                      
+                        return status; 
+                      
+                      }
+                      
+                      
+                      const checkValid = (val) => {    
+                        if(val>=65 && val<=90 || val>=97 && val<=122 || val>=48 && val<=57 || val === 95)
+                        {
+                          return true;
+                        }else{
+                          return false
+                        }
+                      };
+                         
+                      // keep this function call here 
+                      console.log(CodelandUsernameValidation(readline()));</textarea>
 
 
-    Codeland Username Validation
-    Have the function CodelandUsernameValidation(str) take the str parameter being passed and determine if the string is a valid username according to the following rules:
 
-    1. The username is between 4 and 25 characters.
-    2. It must start with a letter.
-    3. It can only contain letters, numbers, and the underscore character.
-    4. It cannot end with an underscore character.
-
-    If the username is valid then your program should return the string true, otherwise return the string false.
-    Examples
-    Input: "aa_"
-    Output: false
-    Input: "u__hello_world123"
-    Output: true
-    Tags
-    searchingstring
-    manipulationsearchingregular
-    expressionCodelandfree
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </main>
 </body>
 </html>
 
