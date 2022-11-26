@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Button Toggle</title>
+    <script src="1.Codeland Username Validation Solution.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <div class="relative px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl pt-20 pb-32 sm:pt-15 sm:pb-40">
+            <div>
+              <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+                <div class="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                  <span class="text-gray-600">
+                    The Problem link of Coder Byte here. <a href="http://www.coderbyte.com/editor/Codeland%20Username%20Validation:JavaScript" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                  </span>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-2xl font-bold tracking-tight sm:text-center sm:text-6xl">React Button Toggle</p></h1>
+                <div class="mt-8 grid gap-x-4 sm:grid-center">
+                  
+                    <p class="font-light text-gray-500 dark:text-gray-400 flex justify-center">We provided some simple React template code. Your goal is to modify the component so that you can properly toggle the button to switch between an ON state and an OFF state. When the button is on and it is clicked, it turns off and the text within it changes from ON to OFF and vice versa. Make use of component state for this challenge.
+
+                        You are free to add classes and styles, but make sure you leave the element ID's as they are. Submit your code once it is complete and our system will validate your output.
+                    
+                    </p>
+                
+                    <textarea class="textarea textarea-info mt-4" rows="15" disabled>import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+
+const Toggle = () => {
+    const [on, setOn] = useState(true);
+
+    return (
+    <button onClick={() => setOn(!on)}>{ on ? 'ON' : 'OFF' }</button>
+    );
+}
+
+ReactDOM.render(
+    <Toggle />,
+    document.getElementById('root')
+);</textarea>
+        
+
+
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </main>
+</body>
+</html>
+
